@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  color: #000000;
+
+  font-family: $roboto;
+  font-size: $font-size;
+  line-height: 1.5rm;
+  font-weight: normal;
+  background-color: #ffffff;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: $max-width;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.reset-list {
+  list-style: none;
+}

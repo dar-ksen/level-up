@@ -1,0 +1,49 @@
+.feedback {
+  padding: 3rem 0;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    flex: 0 0 calc(50% - 1rem);
+    width: calc(50% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 0.4rem solid #af7ba4;
+
+    flex: 0 0 calc(50% - 1rem);
+    width: calc(50% - 1rem);
+  }
+
+  &__price-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    &__row {
+      flex-direction: column;
+      margin-bottom: none;
+    }
+
+    &__form-wrap {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}

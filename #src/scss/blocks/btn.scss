@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  transition: background-color 0.3s;
+  background-color: rgba(100, 194, 158, 0.8);
+  padding: 20px 60px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(100, 194, 158, 0.3);
+  }
+}
